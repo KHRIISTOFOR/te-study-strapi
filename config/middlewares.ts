@@ -13,18 +13,7 @@ export default [
   'strapi::poweredBy',
   'strapi::query',
   'strapi::body',
-  {
-    name: 'strapi::session',
-    config: {
-      secure: false,
-      httpOnly: false,
-      sameSite: 'none',
-    }
-  },
-  {
-    name: 'global::disable-secure-cookies',
-    config: {},
-  },
+  'strapi::session',
   'strapi::favicon',
   'strapi::public',
 ];
