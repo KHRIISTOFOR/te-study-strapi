@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "deadlines",
+  "info": {
+    "singularName": "deadline",
+    "pluralName": "deadlines",
+    "displayName": "Дедлайн",
+    "description": "Дедлайны подачи документов по семестрам"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "semester": {
+      "type": "enumeration",
+      "enum": ["spring", "fall"],
+      "required": true
+    },
+    "semesterName": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "studyPeriod": {
+      "type": "string",
+      "required": true
+    },
+    "applicationPeriod": {
+      "type": "string",
+      "required": true
+    },
+    "applicationPeriodDescription": {
+      "type": "string"
+    },
+    "deadlineDate": {
+      "type": "string",
+      "required": true
+    },
+    "deadlineDescription": {
+      "type": "string"
+    },
+    "deadlineStatus": {
+      "type": "enumeration",
+      "enum": ["active", "upcoming", "closed"],
+      "required": true
+    },
+    "statusText": {
+      "type": "string",
+      "required": true
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": ["primary", "secondary"],
+      "required": true
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "sortOrder": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}
+

@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contacts",
+  "info": {
+    "singularName": "contact",
+    "pluralName": "contacts",
+    "displayName": "Контакт",
+    "description": "Контактная информация и социальные сети"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": ["whatsapp", "telegram", "youtube", "instagram", "office"],
+      "required": true
+    },
+    "icon": {
+      "type": "string",
+      "default": "ri-contacts-line"
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "displayText": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string",
+      "default": "primary"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "sortOrder": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}
+

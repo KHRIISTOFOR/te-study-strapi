@@ -1,0 +1,42 @@
+{
+  "name": "te-study-strapi-new",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Strapi application",
+  "scripts": {
+    "build": "strapi build",
+    "console": "strapi console",
+    "deploy": "strapi deploy",
+    "dev": "strapi develop",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi",
+    "upgrade": "npx @strapi/upgrade latest",
+    "upgrade:dry": "npx @strapi/upgrade latest --dry",
+    "railway:deploy": "npm run build && npm run start"
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "5.28.0",
+    "@strapi/plugin-users-permissions": "5.28.0",
+    "@strapi/strapi": "5.28.0",
+    "better-sqlite3": "11.3.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "06fc9a17-2563-42f8-a02e-c3361ed73ac4",
+    "installId": "3304dc0f0091bdef1afa32ac0d1912d105db3c0b268a908795b2723cec86a684"
+  }
+}

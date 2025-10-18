@@ -1,0 +1,117 @@
+{
+  "kind": "singleType",
+  "collectionName": "site_settings",
+  "info": {
+    "singularName": "site-setting",
+    "pluralName": "site-settings",
+    "displayName": "Настройки сайта",
+    "description": "Общие настройки сайта"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "siteName": {
+      "type": "string",
+      "default": "TE.STUDY"
+    },
+    "siteDescription": {
+      "type": "text"
+    },
+    "siteKeywords": {
+      "type": "text"
+    },
+    "contactPhone": {
+      "type": "string",
+      "default": "+90 392 123 45 67"
+    },
+    "contactEmail": {
+      "type": "email",
+      "default": "info@te-study.com"
+    },
+    "contactAddress": {
+      "type": "string",
+      "default": "Фамагуста, Северный Кипр"
+    },
+    "whatsapp": {
+      "type": "string"
+    },
+    "telegram": {
+      "type": "string"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "heroTitle": {
+      "type": "string",
+      "default": "Международное образование на Северном Кипре"
+    },
+    "heroSubtitle": {
+      "type": "text"
+    },
+    "heroBackgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "aboutTitle": {
+      "type": "string",
+      "default": "О нас"
+    },
+    "aboutContent": {
+      "type": "richtext"
+    },
+    "aboutStats": {
+      "type": "json"
+    },
+    "universitiesTitle": {
+      "type": "string",
+      "default": "Наши университеты"
+    },
+    "universitiesSubtitle": {
+      "type": "text"
+    },
+    "servicesTitle": {
+      "type": "string",
+      "default": "Наши услуги"
+    },
+    "servicesSubtitle": {
+      "type": "text"
+    },
+    "testimonialsTitle": {
+      "type": "string",
+      "default": "Отзывы наших студентов"
+    },
+    "testimonialsSubtitle": {
+      "type": "text"
+    },
+    "contactTitle": {
+      "type": "string",
+      "default": "Свяжитесь с нами"
+    },
+    "contactSubtitle": {
+      "type": "text"
+    },
+    "amocrmSubdomain": {
+      "type": "string",
+      "default": "terziabroadagency"
+    },
+    "amocrmToken": {
+      "type": "string"
+    },
+    "amocrmPipelineId": {
+      "type": "string",
+      "default": "10007782"
+    },
+    "googleAnalyticsId": {
+      "type": "string"
+    },
+    "yandexMetrikaId": {
+      "type": "string"
+    }
+  }
+}

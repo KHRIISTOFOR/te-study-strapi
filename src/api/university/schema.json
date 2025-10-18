@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "universities",
+  "info": {
+    "singularName": "university",
+    "pluralName": "universities",
+    "displayName": "Университет",
+    "description": "Университеты Северного Кипра и Турции"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "shortDescription": {
+      "type": "string",
+      "maxLength": 500
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "website": {
+      "type": "string",
+      "regex": "^https?://.*"
+    },
+    "location": {
+      "type": "string",
+      "default": "Северный Кипр"
+    },
+    "founded": {
+      "type": "integer",
+      "min": 1800,
+      "max": 2024
+    },
+    "studentsCount": {
+      "type": "integer",
+      "min": 0
+    },
+    "programsCount": {
+      "type": "integer",
+      "min": 0
+    },
+    "features": {
+      "type": "json"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "sortOrder": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}
