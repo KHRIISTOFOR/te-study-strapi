@@ -19,4 +19,11 @@ export default ({ env }) => ({
   },
   url: env('PUBLIC_URL', 'http://localhost:1337'),
   serveAdminPanel: true,
+  forgotPassword: {
+    emailTemplate: {
+      subject: 'Reset password',
+      text: 'Reset password',
+      html: 'Reset password',
+    },
+  },
 });

@@ -5,8 +5,15 @@ export default ({ env }) => ({
     keys: env.array('APP_KEYS'),
   },
   url: env('PUBLIC_URL', 'http://localhost:1337'),
-  proxy: env.bool('IS_PROXIED', false),
+  proxy: false,
   cron: {
     enabled: false,
+  },
+  admin: {
+    auth: {
+      secret: env('ADMIN_JWT_SECRET'),
+    },
+    url: env('PUBLIC_URL', 'http://localhost:1337'),
+    serveAdminPanel: true,
   },
 });
