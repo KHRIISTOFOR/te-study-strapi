@@ -4,17 +4,9 @@ export default ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
-  admin: {
-    auth: {
-      options: {
-        expiresIn: '7d',
-      },
-      sessions: {
-        maxRefreshTokenLifespan: '7d',
-        maxSessionLifespan: '7d',
-      },
-    },
-  },
   url: env('PUBLIC_URL', 'http://localhost:1337'),
   proxy: env.bool('IS_PROXIED', false),
+  cron: {
+    enabled: false,
+  },
 });
